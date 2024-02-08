@@ -25,3 +25,9 @@ function generateQRCode() {
         alert("Please enter a valid URL");
     }
 }
+
+document.getElementById("urlInput").addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        generateQRCode();
+    }
+});
